@@ -7,7 +7,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * Desc:
  */
 @ConfigurationProperties(prefix = "config")
-public class Config {
+public class ApplicationConfig {
     private String title; //name要与consul上面的title写的一样
 
     public String getTitle() {

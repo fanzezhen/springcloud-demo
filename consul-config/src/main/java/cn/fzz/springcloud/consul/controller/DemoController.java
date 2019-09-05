@@ -1,10 +1,7 @@
 package cn.fzz.springcloud.consul.controller;
 
-import cn.fzz.springcloud.consul.config.Config;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
+import cn.fzz.springcloud.consul.config.ApplicationConfig;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,7 +15,7 @@ import javax.annotation.Resource;
 @RestController
 public class DemoController {
     @Resource
-    private Config config;
+    private ApplicationConfig config;
 
     @RequestMapping(value = "/getConfig")
     public String getConfig() {
