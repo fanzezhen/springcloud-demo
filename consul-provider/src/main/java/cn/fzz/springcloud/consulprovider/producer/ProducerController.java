@@ -12,6 +12,6 @@ public class ProducerController {
     @GetMapping("/producer")
     public String producer(){
         System.out.println("I'm producer");
-        return "Hello, I'm producer";
+        return "Hello, I'm provider";
     }
 }
